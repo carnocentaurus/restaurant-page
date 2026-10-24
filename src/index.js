@@ -1,3 +1,4 @@
+import './style.css';
 import restaurantBgImg from './restaurant-bg-img.jpg';
 
 const img = document.createElement('img');
