@@ -1,4 +1,27 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('./fonts/BarlowCondensed-Regular.woff2') format('woff2'),
+        url('./fonts/BarlowCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('./fonts/Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* test style */
 body {
+    font-family: 'Montserrat';
     background-color: lightblue;
+}
+
+h1 {
+    font-family: 'Barlow Condensed';
 }
