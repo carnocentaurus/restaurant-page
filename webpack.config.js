@@ -1,3 +1,4 @@
+
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
@@ -14,4 +15,12 @@ export default {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
