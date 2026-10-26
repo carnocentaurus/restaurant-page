@@ -110,13 +110,23 @@ eval("{\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleEle
 
 /***/ },
 
+/***/ "./src/images/chicken-inasal.png"
+/*!***************************************!*\
+  !*** ./src/images/chicken-inasal.png ***!
+  \***************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+eval("{module.exports = __webpack_require__.p + \"f5b8572a91271f0da7db.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/chicken-inasal.png?\n}");
+
+/***/ },
+
 /***/ "./src/home.js"
 /*!*********************!*\
   !*** ./src/home.js ***!
   \*********************/
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction loadHomePage() {\n    const content = document.querySelector(\"#content\");\n\n    const heading = document.createElement(\"h1\");\n    heading.textContent = \"Welcome to Our Restaurant\";\n\n    content.appendChild(heading);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHomePage);\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_chicken_inasal_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/chicken-inasal.png */ \"./src/images/chicken-inasal.png\");\n\n\nfunction loadHomePage() {\n    const content = document.querySelector(\"#content\");\n\n    const heading = document.createElement(\"h1\");\n    heading.textContent = \"Welcome to Our Restaurant\";\n\n    content.appendChild(heading);\n\n    const image = document.createElement(\"img\");\n    image.src = _images_chicken_inasal_png__WEBPACK_IMPORTED_MODULE_0__;\n    image.alt = \"Chicken inasal\";\n    content.appendChild(image);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHomePage);\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?\n}");
 
 /***/ },
 
@@ -183,6 +193,16 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _st
 /******/ 		}
 /******/ 	};
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	__webpack_require__.g = (function() {
+/******/ 		if (typeof globalThis === 'object') return globalThis;
+/******/ 		try {
+/******/ 			return this || new Function('return this')();
+/******/ 		} catch (e) {
+/******/ 			if (typeof window === 'object') return window;
+/******/ 		}
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
 /******/ 	
@@ -192,6 +212,29 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _st
 /******/ 		Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 		Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 	};
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		let scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		const document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript?.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				const scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					let i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^https?:/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:|[?#].*$/g, "").replace(/\/[^/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	__webpack_require__.nc = undefined;
