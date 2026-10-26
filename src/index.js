@@ -1,3 +1,4 @@
 import "./style.css";
+import loadHomePage from "./home.js";
 
-console.log("Restaurant Page is running!");
+loadHomePage();
