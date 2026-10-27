@@ -33,7 +33,7 @@ header {
     flex-direction: column;
 }
 
-.content-cards-div {
+.content-cards-container-div {
     display: flex;
     justify-content: space-between;
 }
