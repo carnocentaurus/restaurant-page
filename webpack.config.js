@@ -26,7 +26,7 @@ export default {
         type: "asset/resource",
       },
       {
-        test: /\.(woff2?|ttf|otf)$/i,
+        test: /\.(woff2?|woff|ttf|otf)$/i,
         type: "asset/resource",
       },
     ],
