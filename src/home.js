@@ -13,6 +13,19 @@ function loadHomePage() {
 
     const contentCardsContainerDiv = document.createElement('div');
     contentCardsContainerDiv.className = 'content-cards-container-div';
+
+    const contentCardLeftDiv = document.createElement('div');
+    contentCardLeftDiv.className = 'green-content-card';
+    contentCardsContainerDiv.appendChild(contentCardLeftDiv);
+
+    const contentCardMiddleDiv = document.createElement('div');
+    contentCardMiddleDiv.className = 'yellow-content-card';
+    contentCardsContainerDiv.appendChild(contentCardMiddleDiv);
+
+    const contentCardRightDiv = document.createElement('div');
+    contentCardRightDiv.className = 'yellow-content-card';
+    contentCardsContainerDiv.appendChild(contentCardRightDiv);
+
     homeDiv.appendChild(contentCardsContainerDiv);
 
     const heading = document.createElement('h1');
