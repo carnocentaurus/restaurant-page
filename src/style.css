@@ -64,6 +64,14 @@ header {
     align-items: center;
 }
 
+.logo-div {
+    display: flex;
+}
+
+.bonfire-svg {
+    height: 3rem;
+}
+
 .hero-div {
     display: flex;
 }
