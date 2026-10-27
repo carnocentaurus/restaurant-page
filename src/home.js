@@ -18,15 +18,25 @@ function loadHomePage() {
     contentCardLeftDiv.className = 'green-content-card';
     contentCardsContainerDiv.appendChild(contentCardLeftDiv);
 
+    const contentCardLeftHeadline = document.createElement('h3');
+    contentCardLeftHeadline.textContent = 'REAL CHARCOAL GRILL';
+    contentCardLeftDiv.appendChild(contentCardLeftHeadline);
+
     const contentCardMiddleDiv = document.createElement('div');
     contentCardMiddleDiv.className = 'yellow-content-card';
     contentCardsContainerDiv.appendChild(contentCardMiddleDiv);
+
+    const contentCardMiddleHeadline = document.createElement('h3');
+    contentCardMiddleHeadline.textContent = 'GRILLED FRESH TO ORDER';
+    contentCardMiddleDiv.appendChild(contentCardMiddleHeadline);
 
     const contentCardRightDiv = document.createElement('div');
     contentCardRightDiv.className = 'yellow-content-card';
     contentCardsContainerDiv.appendChild(contentCardRightDiv);
 
-    homeDiv.appendChild(contentCardsContainerDiv);
+    const contentCardRightHeadline = document.createElement('h3');
+    contentCardRightHeadline.textContent = 'CONTACT FOR CATERING';
+    contentCardRightDiv.appendChild(contentCardRightHeadline);
 
     const heading = document.createElement('h1');
     heading.textContent = 'SALO-SALO GRILL';
@@ -52,8 +62,10 @@ function loadHomePage() {
         coming back for more.
     `;
     heroTextDiv.appendChild(heroSubheadlineText);
+
     heroDiv.appendChild(heroTextDiv);
     homeDiv.appendChild(heroDiv);
+    homeDiv.appendChild(contentCardsContainerDiv);
 
     return homeDiv;
 }

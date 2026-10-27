@@ -43,6 +43,6 @@ header {
     flex-direction: column;
 }
 
-h1 {
+h1, h3 {
     font-family: 'Barlow Condensed';
 }
