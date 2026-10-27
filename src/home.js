@@ -22,6 +22,11 @@ function loadHomePage() {
     contentCardLeftHeadline.textContent = 'REAL CHARCOAL GRILL';
     contentCardLeftDiv.appendChild(contentCardLeftHeadline);
 
+    const contentCardLeftSubheadline = document.createElement('p');
+    contentCardLeftSubheadline.textContent = 
+        'Every order is cooked over live coals for that smoky bite.';
+    contentCardLeftDiv.appendChild(contentCardLeftSubheadline);
+
     const contentCardMiddleDiv = document.createElement('div');
     contentCardMiddleDiv.className = 'yellow-content-card';
     contentCardsContainerDiv.appendChild(contentCardMiddleDiv);
@@ -30,6 +35,11 @@ function loadHomePage() {
     contentCardMiddleHeadline.textContent = 'GRILLED FRESH TO ORDER';
     contentCardMiddleDiv.appendChild(contentCardMiddleHeadline);
 
+    const contentCardMiddleSubheadline = document.createElement('p');
+    contentCardMiddleSubheadline.textContent = 
+        'Chicken, pork and seafood marinated daily and served hot.';
+    contentCardMiddleDiv.appendChild(contentCardMiddleSubheadline);
+
     const contentCardRightDiv = document.createElement('div');
     contentCardRightDiv.className = 'yellow-content-card';
     contentCardsContainerDiv.appendChild(contentCardRightDiv);
@@ -37,6 +47,11 @@ function loadHomePage() {
     const contentCardRightHeadline = document.createElement('h3');
     contentCardRightHeadline.textContent = 'CONTACT FOR CATERING';
     contentCardRightDiv.appendChild(contentCardRightHeadline);
+
+    const contentCardRightSubheadline = document.createElement('p');
+    contentCardRightSubheadline.textContent = 
+        'Planning a salo-salo gathering? Send us the details.';
+    contentCardRightDiv.appendChild(contentCardRightSubheadline);
 
     const heading = document.createElement('h1');
     heading.textContent = 'SALO-SALO GRILL';
