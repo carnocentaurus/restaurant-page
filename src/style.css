@@ -14,6 +14,16 @@
     font-display: swap;
 }
 
+:root {
+    --green: #1d5c38;
+    --yellow: #f4b731;
+    --orange: #e5592b;
+    --olive: #7a9a2e;
+    --ink: #0b0b0b;
+    --paper: #ffffff;
+    --cream: #fbe9b0;
+}
+
 /* test style */
 body {
     font-family: 'Montserrat';
