@@ -26,6 +26,10 @@ header {
     justify-content: space-between;
 }
 
+.hero-div {
+    display: flex;
+}
+
 h1 {
     font-family: 'Barlow Condensed';
 }
