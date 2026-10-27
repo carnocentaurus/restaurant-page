@@ -6,7 +6,19 @@ import loadContactPage from "./contact.js";
 const content = document.querySelector("#content");
 
 function showHomePage() {
-  content.replaceChildren(loadHomePage());
+    content.replaceChildren(loadHomePage());
 }
+
+function showMenuPage() {
+    content.replaceChildren(loadMenuPage());
+}
+
+function showContactPage() {
+    content.replaceChildren(loadContactPage());
+}
+
+document.querySelector("#home-button").addEventListener("click", showHomePage);
+document.querySelector("#menu-button").addEventListener("click", showMenuPage);
+document.querySelector("#contact-button").addEventListener("click", showContactPage);
 
 showHomePage();
