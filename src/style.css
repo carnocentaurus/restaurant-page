@@ -30,6 +30,11 @@ header {
     display: flex;
 }
 
+.hero-text-div {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'Barlow Condensed';
 }
