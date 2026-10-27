@@ -11,6 +11,10 @@ function loadHomePage() {
     const heroTextDiv = document.createElement('div');
     heroTextDiv.className = 'hero-text-div';
 
+    const contentCardsDiv = document.createElement('div');
+    contentCardsDiv.className = 'content-cards-div';
+    homeDiv.appendChild(contentCardsDiv);
+
     const heading = document.createElement('h1');
     heading.textContent = 'SALO-SALO GRILL';
     header.prepend(heading);
@@ -36,7 +40,6 @@ function loadHomePage() {
     `;
     heroTextDiv.appendChild(heroSubheadlineText);
     heroDiv.appendChild(heroTextDiv);
-
     homeDiv.appendChild(heroDiv);
 
     return homeDiv;

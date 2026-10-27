@@ -33,6 +33,11 @@ header {
     flex-direction: column;
 }
 
+.content-cards-div {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
     font-family: 'Barlow Condensed';
 }
