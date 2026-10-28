@@ -88,6 +88,30 @@ header {
     color: var(--yellow);
 }
 
+nav {
+    display: flex;
+}
+
+nav button {
+    font-family: 'Barlow Condensed';
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    border: none;
+    color: var(--cream);
+    background-color: transparent;
+    padding: 30px;
+}
+
+nav button:hover { 
+    cursor: pointer;
+    background-color: rgba(244,183,49,.2); 
+}
+
+nav button[aria-current="page"] { 
+    background: var(--yellow); 
+    color: var(--green);
+}
+
 .hero-div {
     display: flex;
 }
