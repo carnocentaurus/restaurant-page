@@ -4,21 +4,13 @@ import loadMenuPage from "./menu.js";
 import loadContactPage from "./contact.js";
 
 const content = document.querySelector("#content");
+const pages = { home: loadHomePage, menu: loadMenuPage, contact: loadContactPage };
 
-function showHomePage() {
-    content.replaceChildren(loadHomePage());
-}
+document.querySelector("nav").addEventListener("click", (event) => {
+    if (event.target.tagName !== "BUTTON") return;
+    document.querySelector('nav [aria-current="page"]')?.removeAttribute("aria-current");
+    event.target.setAttribute("aria-current", "page");
+    content.replaceChildren(pages[event.target.dataset.go]());
+});
 
-function showMenuPage() {
-    content.replaceChildren(loadMenuPage());
-}
-
-function showContactPage() {
-    content.replaceChildren(loadContactPage());
-}
-
-document.querySelector("#home-button").addEventListener("click", showHomePage);
-document.querySelector("#menu-button").addEventListener("click", showMenuPage);
-document.querySelector("#contact-button").addEventListener("click", showContactPage);
-
-showHomePage();
+content.replaceChildren(loadHomePage());
