@@ -132,6 +132,13 @@ nav button[aria-current="page"] {
     flex-direction: column;
 }
 
+.hero-headline-text {
+    color: var(--ink);
+    font-size: 3.7rem;
+    line-height: 1.03;
+    letter-spacing: 1px;
+}
+
 .content-cards-container-div {
     display: flex;
     justify-content: space-between;

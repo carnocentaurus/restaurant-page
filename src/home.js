@@ -21,6 +21,7 @@ function loadHomePage() {
 
     // 3. Create and initialize hero text
     const heroHeadlineText = document.createElement('h1');
+    heroHeadlineText.className = 'hero-headline-text';
     heroHeadlineText.textContent = 'FEEL THE HEAT OF TRUE FILIPINO GRILLED FLAVORS';
 
     const heroSubheadlineText = document.createElement('p');
