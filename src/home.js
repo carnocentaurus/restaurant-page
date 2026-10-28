@@ -15,6 +15,7 @@ function loadHomePage() {
 
     // 2. Create and initialize the hero image
     const image = document.createElement('img');
+    image.className = 'hero-img';
     image.src = chickenInasal;
     image.alt = 'Chicken inasal';
 

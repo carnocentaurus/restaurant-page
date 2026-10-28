@@ -112,8 +112,19 @@ nav button[aria-current="page"] {
     color: var(--green);
 }
 
+#content {
+    margin: 70px;
+}
+
 .hero-div {
     display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.hero-img {
+    width: 50%;
+    border-radius: 5px;
 }
 
 .hero-text-div {
