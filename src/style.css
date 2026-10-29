@@ -157,6 +157,11 @@ nav button[aria-current="page"] {
     flex-direction: column;
 }
 
+#flame-icon {
+    width: 50px;
+    height: 56px;
+}
+
 h1, h3 {
     font-family: 'Barlow Condensed';
 }

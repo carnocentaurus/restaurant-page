@@ -1,4 +1,5 @@
 import chickenInasal from './images/chicken-inasal.png';
+import { createFlameIcon } from './icons.js';
 
 function loadHomePage() {
     // 1. Create the root container and main section containers
@@ -72,6 +73,7 @@ function loadHomePage() {
     heroTextDiv.appendChild(heroHeadlineText);
     heroTextDiv.appendChild(heroSubheadlineText);
 
+    contentCardLeftDiv.appendChild(createFlameIcon());
     contentCardLeftDiv.appendChild(contentCardLeftHeadline);
     contentCardLeftDiv.appendChild(contentCardLeftSubheadline);
 
