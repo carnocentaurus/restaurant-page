@@ -25,6 +25,7 @@ function loadHomePage() {
     heroHeadlineText.textContent = 'FEEL THE HEAT OF TRUE FILIPINO GRILLED FLAVORS';
 
     const heroSubheadlineText = document.createElement('p');
+    heroSubheadlineText.className = 'hero-subheadline-text';
     heroSubheadlineText.textContent = `
         Welcome to Salo-Salo Grill, your home for authentic, charcoal-grilled Filipino cuisine 
         that warms the heart. We bring you the smoked perfection, irresistible marinades, and 

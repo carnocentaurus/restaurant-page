@@ -130,6 +130,7 @@ nav button[aria-current="page"] {
 .hero-text-div {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .hero-headline-text {
@@ -137,6 +138,13 @@ nav button[aria-current="page"] {
     font-size: 3.7rem;
     line-height: 1.03;
     letter-spacing: 1px;
+}
+
+.hero-subheadline-text {
+    color: var(--ink);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .content-cards-container-div {
